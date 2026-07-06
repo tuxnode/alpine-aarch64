@@ -1,3 +1,5 @@
+#!/bin/bash
+
 EFI_PATH="/usr/share/qemu-efi-aarch64/QEMU_EFI.fd"
 
 qemu-system-aarch64 \

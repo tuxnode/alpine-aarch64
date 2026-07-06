@@ -1,4 +1,4 @@
-# Alpine Linux aarch64 QEMU 虚拟机
+# Alpine Linux aarch64 QEMU Launch Script
 
 使用 QEMU 运行 Alpine Linux aarch64 虚拟机，支持 EFI 启动和 VirtIO 网络。
 
