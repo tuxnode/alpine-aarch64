@@ -1,3 +1,14 @@
+#!/bin/bash
+
+URL="https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/aarch64/alpine-virt-3.24.1-aarch64.iso"
+
+if ! command -v curl &> /dev/null; then
+    echo "Install curl first!!!"
+    exit 1
+fi
+
+curl -L -C - --fail -o "$URL"
+
 qemu-img create -f qcow2 alpine.qcow2 20G
 
 EFI_PATH="/usr/share/qemu-efi-aarch64/QEMU_EFI.fd"
